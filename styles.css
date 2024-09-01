@@ -1,0 +1,225 @@
+* {
+    font-family: "Montserrat-Bold", sans-serif;
+    src: url(fonts/static/Montserrat-Bold.ttf);
+}
+
+body {
+    background-color: #393E46;
+    margin: 0;
+}
+
+/* Barra de Navegación */
+
+nav {
+    background-color: #222831;
+    display: block;
+    height: 40%;
+    padding: 0 20px;
+}
+
+.nav-container {
+    width: 100%;
+    display: block;
+    align-items: center;
+}
+
+/* imagen de krc */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+#img-maxi {
+    justify-content: center;
+    width: auto;
+    height: 200px;
+    cursor: pointer;
+}
+
+h1, #h2-nav {
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    user-select: none;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+#h2-nav {
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+/* boton de contacto */
+
+.contact-button {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+    margin: 0;
+}
+
+#boton-contacto {
+    background-color: #393E46;
+    border: solid 2px #EEEEEE;
+    border-radius: 5px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+/* Barra de Navegacion */
+
+h2 {
+    display: block;
+    text-align: center;
+    color: #EEEEEE;
+    margin: 10px;
+}
+
+/* contenedor de cuadrados del index */
+
+.container, .contenedor {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+}
+
+.square {
+    width: 220px;
+    height: 220px;
+    border: solid 3px #222831;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Estilos para las imágenes */
+.square img {
+    max-width: 100%;
+    max-height: 180px;
+    margin-bottom: 10px;
+}
+
+.square p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+.enlace {
+    text-decoration: none;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .container {
+        gap: 10px;
+    }
+    .square {
+        width: 45%; /* Dos cuadrados por fila */
+    }
+}
+
+/* Contenido de la pagina PROMOS */
+.cuadrado {
+    width: 300px;
+    height: 300px;
+    border: solid 3px #222831;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.cuadrado img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+/* Contenido de contactos */
+
+.face-icon, .wsp-icon, .ig-icon {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+}
+
+.iconos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+hr {
+    border: solid 1px #222831;
+    margin: 0;
+}
+
+.contenedor-contactos {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+}
+
+.square-contactos {
+    width: 70%;
+    height: 250px;
+    border: solid 3px #222831;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.square-contactos img {
+    max-width: 100%;
+    max-height: 90%;
+}
+
+.square-contactos p {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    .contenedor-contactos {
+        gap: 40px;
+    }
+    .square-contactos {
+        width: 50%;
+    }
+}
